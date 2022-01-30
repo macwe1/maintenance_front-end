@@ -1,0 +1,61 @@
+@use 'colors';
+.wrapper {
+    &_services {
+         ::selection {
+            background-color: #fff !important;
+        }
+        display: flex;
+        position: relative;
+        width: 100%;
+        background-color: colors.$color-brand-primary2;
+        color: #fff;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &_text {
+            max-width: 400px;
+        }
+        &_info {
+            text-transform: uppercase;
+            &_header {
+                color: #b7b9be;
+                font-weight: 700;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            &_textPostHeader {
+                font-weight: 300;
+                font-size: 38px;
+                margin-bottom: 15px;
+            }
+            &_textConst {
+                font-weight: 800;
+                margin-bottom: 15px;
+                font-size: 28px;
+            }
+            &_textHeaderLast {
+                font-weight: 300;
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
+        }
+        &_listServices {
+            display: flex;
+            justify-content: center;
+            &_column {
+                margin-left: 50px;
+                &_point {
+                    margin-bottom: 15px;
+                    &_lessThan {
+                        margin-right: 5px;
+                        svg {
+                            width: 14px !important;
+                            transform: rotate(180deg);
+                            fill: colors.$primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
