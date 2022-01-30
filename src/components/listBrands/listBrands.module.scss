@@ -1,0 +1,50 @@
+@use 'colors';
+.listBrands {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: colors.$color-brand-primary2;
+    color: #fff;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &_text {
+        p {
+            margin: 30px;
+        }
+         :nth-child(1) {
+            font-weight: 700;
+            font-size: 14px;
+            color: colors.$primary-color;
+            text-transform: uppercase;
+        }
+         :nth-child(2) {
+            font-weight: 900;
+            font-size: 54px;
+            color: #fff;
+        }
+         :nth-child(3) {
+            font-weight: 200;
+            font-size: 22px;
+            color: #fff;
+        }
+    }
+    &_backgroundAll {
+        width: 900px !important;
+        display: flex;
+        align-items: center;
+        div {
+            width: 950px;
+        }
+        &_backgroundSlider {
+            width: 200px !important;
+            height: 200px !important;
+            background-color: colors.$primary-color;
+            margin-right: 20px;
+            width: 100%;
+            display: flex !important;
+            justify-content: center;
+            border-radius: 30px;
+        }
+    }
+}

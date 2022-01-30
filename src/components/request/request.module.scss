@@ -9,18 +9,16 @@
     &_container {
         position: absolute;
         width: 600px;
-        height: calc(100vh - 00px);
-        transform: translate(50%, 0);
-        top: 50px;
+        transform: translate(50%, -50%);
+        top: 50%;
         left: 0;
         background-color: colors.$color-brand-primary2;
         border-radius: 10px;
         box-shadow: 10px 10px 20px #000;
         opacity: 80%;
-        padding: 15px 25px;
+        padding: 25px 25px 60px 25px;
         &_text {
             text-align: center;
-            margin-top: 100px;
             p {
                 margin: 40px;
             }
