@@ -12,8 +12,14 @@ import { createWrapper, MakeStore, HYDRATE } from 'next-redux-wrapper'
 
 import { counterReducer, CounterState } from './counter/counterReducer'
 
+interface windowWidth {
+  width: number
+}
+
 export interface AppState {
   counter: CounterState
+  width: windowWidth
+  user: windowWidth
 }
 
 const combinedReducers = combineReducers({ counter: counterReducer })

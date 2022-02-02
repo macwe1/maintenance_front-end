@@ -5,13 +5,15 @@ import Button from '@components/Button/Button'
 export const Request: React.FunctionComponent = () => {
   return (
     <div className={styles.request}>
-      <Image
-        src={back}
-        width={2560}
-        height={1440}
-        sizes="100%"
-        objectFit="cover"
-      />
+      <div className={styles.test}>
+        <Image
+          src={back}
+          width={'100%'}
+          height={'100%'}
+          sizes="100%"
+          objectFit="cover"
+        />
+      </div>
       <div className={styles.request_container}>
         <div className={styles.request_container_text}>
           <p>—SEND A REQUEST</p>

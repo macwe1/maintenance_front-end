@@ -1,9 +1,9 @@
-declare module 'svg-sprite-loader/runtime/sprite.build' {
+declare module "svg-sprite-loader/runtime/sprite.build" {
   const sprite = {
-    stringify():string {
-      return ''
-    }
-  }
+    stringify(): string {
+      return "";
+    },
+  };
 
-  export default sprite
+  export default sprite;
 }

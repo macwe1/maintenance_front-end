@@ -2,11 +2,14 @@
 body {
     margin: 0;
     left: 0;
+    max-width: 100vw;
+    overflow-x: hidden !important;
     * {
         box-sizing: border-box;
         font-family: variables.$font-unit;
     }
     a {
+        color: #fff;
         text-decoration: none;
     }
     p {

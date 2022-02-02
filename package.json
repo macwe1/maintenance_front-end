@@ -6,7 +6,11 @@
     "license": "ISC",
     "scripts": {
         "build": "rm -rf .next && next build",
-        "dev": "next dev"
+        "dev": "next dev",
+        "prettier": "prettier  --write **/*.{ts,tsx,js}",
+        "lint:ts": "npm run prettier && eslint --fix 'src/**/*.{ts,tsx}'",
+        "lint:scss": "stylelint --fix 'src/**/*.scss'",
+        "lint:types": "tsc -p . --noEmit"
     },
     "keywords": [
         "nextjs"

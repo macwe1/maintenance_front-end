@@ -1,0 +1,16 @@
+@use 'colors';
+@use 'fonts';
+.footer {
+    background-color: colors.$color-brand-primary2;
+    display: flex;
+    justify-content: space-between;
+    &_container {
+        width: 550px;
+        &_link {
+             :nth-child(1n) {
+                margin-right: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
