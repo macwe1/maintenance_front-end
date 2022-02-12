@@ -16,6 +16,7 @@ const ListServices: React.FunctionComponent = () => {
   useEffect(() => {
     window.addEventListener('resize', () => {
       setW(window.innerWidth)
+      console.log(w)
     })
   }, [])
 
@@ -23,15 +24,12 @@ const ListServices: React.FunctionComponent = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: w < 400 ? 1 : w > 900 ? 4 : 2,
+    slidesToShow: w > 800 ? (w > 1400 ? 4 : 2) : 1,
     slidesToScroll: 1,
     arrows: true,
     autoplay: false,
     autoplaySpeed: 3000,
   }
-  // (w > 1100) ? banners.slidesToShow = 4 : banners.slidesToShow = 3;
-  console.log(banners.slidesToShow)
-
   return (
     <div className={styles.listBrands}>
       <div className={styles.listBrands_text}>
@@ -41,7 +39,7 @@ const ListServices: React.FunctionComponent = () => {
       </div>
       <div className={styles.listBrands_backgroundAll}>
         <Slider {...banners}>
-          {/* <div className={styles.listBrands_backgroundAll_backgroundSlider}>
+          <div className={styles.listBrands_backgroundAll_backgroundSlider}>
             <Image src={BMWBrand} alt="step" objectFit="contain" />
           </div>
           <div
@@ -73,7 +71,7 @@ const ListServices: React.FunctionComponent = () => {
             className={styles.listBrands_backgroundAll_backgroundSlider}
           >
             <Image src={FordBrand} alt="step" objectFit="contain" />
-          </div> */}
+          </div>
         </Slider>
       </div>
     </div>

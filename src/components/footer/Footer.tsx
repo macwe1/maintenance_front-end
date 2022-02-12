@@ -1,28 +1,44 @@
-import styles from './footer.module.scss'
-import Image from 'next/image'
-import Logo from '@common/img/logo.png'
 import Link from 'next/link'
+import styles from './footer.module.scss'
 
 export const Footer: React.FunctionComponent = () => {
   return (
-    <div className={styles.footer}>
-      <div className={styles.footer_container}>
-        <div className={styles.footer_container_top}>
-          <div className={styles.footer_container_top_logo}>
-            <Image src={Logo} />
+    <div className={styles.footerWrapper}>
+      <div className={styles.footerWrapper_content}>
+        <div className={styles.footerWrapper_ft}></div>
+        <div className={styles.footerWrapper_content_links}>
+          <div className={styles.footerWrapper_content_links_link}>
+            <Link href="#">Политика конфиденциальности</Link>
           </div>
-          <div className={styles.footer_container_top_links}>
-            <Link href="#">Главная</Link>
-            <Link href="#">Услуги</Link>
-            <Link href="#">Отзывы</Link>
-            <Link href="#">О нас</Link>
-            <Link href="#">Контакты</Link>
+          <div className={styles.footerWrapper_content_links_link}>
+            <Link href="#">Использование cookies</Link>
+          </div>
+          <div className={styles.footerWrapper_content_links_link}>
+            <Link href="#">cookies</Link>
+          </div>
+          <div className={styles.footerWrapper_content_links_link}>
+            <Link href="#">cookies</Link>
+          </div>
+          <div className={styles.footerWrapper_content_links_link}>
+            <Link href="#">cookies</Link>
           </div>
         </div>
-        <div className={styles.footer_container_separator}></div>
-        <div className={styles.footer_container_bottom}>
-          <div className={styles.footer_container_top_logo}></div>
-          <div className={styles.footer_container_top_links}></div>
+      </div>
+      <div className={styles.footerWrapper_separator}></div>
+      <div className={styles.footerWrapper_content_terms}>
+        <p>© Created by Macwel Group</p>
+        <div className={styles.footerWrapper_content_terms_created}>
+          <p>
+            Copyright © 2022 Carobar.
+            <span>
+              <Link href="#"> All rights reserved.</Link>
+            </span>{' '}
+            and
+            <span>
+              <Link href="#"> cookies</Link>
+            </span>
+            .
+          </p>
         </div>
       </div>
     </div>

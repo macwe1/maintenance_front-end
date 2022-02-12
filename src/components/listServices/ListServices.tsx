@@ -23,8 +23,8 @@ export const ListServices: React.FunctionComponent = () => {
           <p className={styles.wrapper_services_info_textHeaderLast}>
             Meet the skilled team of mechanics with over 5 years of immaculate
             experience in car repair industry! We use only top quality parts,
-            and are bent on making your road trips safe and comfortable! We’re
-            always glad to assist you in these tasks.
+            and are bent on making your roadgfgdfgdf trips safe and comfortable!
+            We’re always glad to assist you in these tasks.
           </p>
         </div>
         <Button text="Book of empire" />

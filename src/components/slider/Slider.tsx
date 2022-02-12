@@ -5,7 +5,7 @@ import Image from 'next/image'
 export const Slider: React.FunctionComponent = () => {
   return (
     <div className={styles.slider}>
-      <Image src={back} sizes="100%" role="presentation" />
+      <Image src={back} sizes="100%" role="presentation" priority={true} />
       <div className={styles.slider_line}>
         <div>
           <p>WE'RE YOUR ONE STOP</p>

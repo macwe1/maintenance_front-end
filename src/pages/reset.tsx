@@ -1,4 +1,4 @@
-import { HomepageCounter } from '@containers/counter/HomepageCounter'
+// import { HomepageCounter } from '@containers/counter/HomepageCounter'
 import Link from 'next/link'
 import { storeWrapper } from '../store/store'
 import { reset } from '@store/counter/counterActions'
@@ -12,7 +12,7 @@ const ResetPage: React.FC = () => {
       <Link href={'/'}>
         <a>back</a>
       </Link>
-      <HomepageCounter />
+      {/* <HomepageCounter /> */}
     </main>
   )
 }

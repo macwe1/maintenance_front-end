@@ -1,4 +1,8 @@
 @use 'colors';
+.slick-slider.slick-initialized {
+    color: red;
+}
+
 .listBrands {
     @media screen and (max-width: 900px) {
         flex-direction: column;
@@ -43,7 +47,7 @@
             width: 100%;
         }
         @media (max-width: 1655px) {
-            justify-content: center;
+            // justify-content: center;
             div {
                 // width: 840px;
             }

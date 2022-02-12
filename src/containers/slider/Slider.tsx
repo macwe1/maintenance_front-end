@@ -13,7 +13,5 @@ const mapDispatchToProps = (dispatch: Dispatch) => ({
   remove: () => dispatch(decrement),
 })
 
-export const SliderContainers = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Slider)
+const SliderContainers = connect(mapStateToProps, mapDispatchToProps)(Slider)
+export default SliderContainers
