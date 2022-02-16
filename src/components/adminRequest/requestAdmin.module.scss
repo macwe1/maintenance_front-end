@@ -67,10 +67,8 @@
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            &_separator {
-                                background-color: #9FA2B4;
-                                padding: 1px;
-                            }
+                            width: 88.5%;
+                            padding-top: 20px;
                             &_one {
                                 display: flex;
                                 flex-direction: column;

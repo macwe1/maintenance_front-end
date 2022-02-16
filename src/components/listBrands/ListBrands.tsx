@@ -7,8 +7,8 @@ import FordBrand from '@common/img/ford.webp'
 import Audirand from '@common/img/audi.webp'
 import Slider from 'react-slick'
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+// import 'slick-carousel/slick/slick.css'
+// import 'slick-carousel/slick/slick-theme.css'
 
 const ListServices: React.FunctionComponent = () => {
   const [w, setW] = useState(window.innerWidth)

@@ -1,7 +1,7 @@
-import styles from './requestAdmin.module.scss'
+import styles from './contactsAdmin.module.scss'
 import { SideBar } from '@components/sidebar/Sidebar'
 import { feature } from '@components/feature/index'
-export const Request: React.FunctionComponent = () => {
+export const Contacts: React.FunctionComponent = () => {
   feature({})
   return (
     <div className={styles.wrapper}>
@@ -9,7 +9,7 @@ export const Request: React.FunctionComponent = () => {
       <div className={styles.wrapper_container}>
         <div className={styles.wrapper_container_header}>
           <div className={styles.wrapper_container_header_title}>
-            <p>Заявки</p>
+            <p>Контакты</p>
           </div>
           <div className={styles.wrapper_container_header_user}>
             <div className={styles.wrapper_container_header_user_nameUser}>
@@ -30,7 +30,7 @@ export const Request: React.FunctionComponent = () => {
                   styles.wrapper_container_tableTop_block_headerBlock_text
                 }
               >
-                <p>Все заявки</p>
+                <p>Все контакты</p>
               </div>
               <div
                 className={
@@ -60,567 +60,7 @@ export const Request: React.FunctionComponent = () => {
                   styles.wrapper_container_tableTop_block_table_top_three
                 }
               >
-                Дата
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.wrapper_container_tableTop_block_ticket}>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_one}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_name
-                  }
-                >
-                  <p>Заявка</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_one_desc
-                  }
-                >
-                  <p>Updating 1 day ago</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_two}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_name
-                  }
-                >
-                  <p>ФИО</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_two_desc
-                  }
-                >
-                  <p>on 24 05 2022</p>
-                </div>
-              </div>
-              <div
-                className={styles.wrapper_container_tableTop_block_ticket_three}
-              >
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_name
-                  }
-                >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
-                </div>
+                Телефон
               </div>
             </div>
 
@@ -633,7 +73,7 @@ export const Request: React.FunctionComponent = () => {
                     styles.wrapper_container_tableTop_block_ticket_one_name
                   }
                 >
-                  <p>Заявка</p>
+                  <p>Контакт</p>
                 </div>
                 <div
                   className={
@@ -669,14 +109,7 @@ export const Request: React.FunctionComponent = () => {
                     styles.wrapper_container_tableTop_block_ticket_three_name
                   }
                 >
-                  <p>February 12.02.2022</p>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
-                  }
-                >
-                  <p>6:30 AM</p>
+                  <p>+7(645)28865</p>
                 </div>
               </div>
             </div>
@@ -689,7 +122,7 @@ export const Request: React.FunctionComponent = () => {
                     styles.wrapper_container_tableTop_block_ticket_one_name
                   }
                 >
-                  <p>Заявка</p>
+                  <p>Контакт</p>
                 </div>
                 <div
                   className={
@@ -725,14 +158,448 @@ export const Request: React.FunctionComponent = () => {
                     styles.wrapper_container_tableTop_block_ticket_three_name
                   }
                 >
-                  <p>February 12.02.2022</p>
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
                 </div>
                 <div
                   className={
-                    styles.wrapper_container_tableTop_block_ticket_three_desc
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
                   }
                 >
-                  <p>6:30 AM</p>
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.wrapper_container_tableTop_block_ticket}>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_one}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_name
+                  }
+                >
+                  <p>Контакт</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_one_desc
+                  }
+                >
+                  <p>Updating 1 day ago</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_two}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_name
+                  }
+                >
+                  <p>ФИО</p>
+                </div>
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_two_desc
+                  }
+                >
+                  <p>on 24 05 2022</p>
+                </div>
+              </div>
+              <div
+                className={styles.wrapper_container_tableTop_block_ticket_three}
+              >
+                <div
+                  className={
+                    styles.wrapper_container_tableTop_block_ticket_three_name
+                  }
+                >
+                  <p>+7(645)28865</p>
                 </div>
               </div>
             </div>
