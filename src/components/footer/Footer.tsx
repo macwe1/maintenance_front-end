@@ -13,15 +13,6 @@ export const Footer: React.FunctionComponent = () => {
           <div className={styles.footerWrapper_content_links_link}>
             <Link href="#">Использование cookies</Link>
           </div>
-          <div className={styles.footerWrapper_content_links_link}>
-            <Link href="#">cookies</Link>
-          </div>
-          <div className={styles.footerWrapper_content_links_link}>
-            <Link href="#">cookies</Link>
-          </div>
-          <div className={styles.footerWrapper_content_links_link}>
-            <Link href="#">cookies</Link>
-          </div>
         </div>
       </div>
       <div className={styles.footerWrapper_separator}></div>

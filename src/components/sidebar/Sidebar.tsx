@@ -49,7 +49,16 @@ export const SideBar: React.FunctionComponent = () => {
           <Icon className={styles.icon} name="contacts" />
           Контакты
         </div>
-        <div className={styles.sidebar_items_agents}>
+        <div
+          className={
+            router.asPath === '/admin/agents'
+              ? `${styles.sidebar_items_agents} &&
+                ${styles.activePage}
+              `
+              : styles.sidebar_items_contacts
+          }
+          onClick={() => router.push('/admin/agents')}
+        >
           <Icon className={styles.icon} name="agents" />
           Агенты
         </div>

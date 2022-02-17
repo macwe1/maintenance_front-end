@@ -1,8 +1,42 @@
 import styles from './index.module.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SideBar } from '@components/sidebar/Sidebar'
+import router from 'next/router'
+import axios from 'axios'
 export const adminIndex: React.FunctionComponent = () => {
   const [activeBlock, setActiveBlock] = useState(2)
+  const [reqCounter, setReqCounter] = useState(null)
+  const [reqCounterFinall, setreqCounterFinall] = useState(null)
+  const [reqCounterCall, setreqCounterCall] = useState(null)
+  const [token, setToken] = useState(null)
+  useEffect(() => {
+    setToken(window.localStorage.getItem('token'))
+  }, [])
+  useEffect(() => {
+    !window.localStorage.getItem('token') && router.push('/admin/auth')
+  }, [])
+  const headers = {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${token}`,
+  }
+  axios
+    .post(
+      `http://127.0.0.1:3231/admin/stats`,
+      {},
+      {
+        headers,
+      }
+    )
+    .then((res) => {
+      if (res.status === 200) {
+        setReqCounter(res.data.requestCount)
+        setreqCounterFinall(res.data.requestFinall)
+        setreqCounterCall(res.data.requestCall)
+      }
+    })
+    .catch((err) => {
+      console.log(err)
+    })
   return (
     <div className={styles.indexWrapper}>
       <SideBar />
@@ -32,7 +66,7 @@ export const adminIndex: React.FunctionComponent = () => {
               }
             >
               <p>Кол-во заявок</p>
-              <p>90</p>
+              <p>{reqCounter}</p>
             </div>
             {/* 2 */}
             <div
@@ -44,7 +78,7 @@ export const adminIndex: React.FunctionComponent = () => {
               }
             >
               <p>Выполненные заявки</p>
-              <p>0</p>
+              <p>{reqCounterFinall}</p>
             </div>
             {/* 3 */}
             <div
@@ -56,7 +90,7 @@ export const adminIndex: React.FunctionComponent = () => {
               }
             >
               <p>Кол-во звонков</p>
-              <p>339</p>
+              <p>{reqCounterCall}</p>
             </div>
           </div>
         </div>

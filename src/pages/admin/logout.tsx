@@ -6,14 +6,11 @@ import { useEffect } from 'react'
  */
 const HomePage: React.FC = () => {
   useEffect(() => {
-    window.localStorage.getItem('token') && router.push('/admin')
+    window.localStorage.removeItem('token')
+    router.push('/admin/auth')
   }, [])
 
-  return (
-    <>
-      <AuthContainers />
-    </>
-  )
+  return <></>
 }
 
 export default HomePage
