@@ -8,10 +8,10 @@ export const Slider: React.FunctionComponent = () => {
       <Image src={back} sizes="100%" role="presentation" priority={true} />
       <div className={styles.slider_line}>
         <div>
-          <p>WE'RE YOUR ONE STOP</p>
+          <p>МЫ ВАША ЕДИНСТВЕННАЯ ОСТАНОВКА</p>
         </div>
         <div>
-          <p>DESTINATION FOR THAT!</p>
+          <p>ПУНКТ НАЗНАЧЕНИЯ ДЛЯ РЕМОНТА!</p>
         </div>
       </div>
     </div>
