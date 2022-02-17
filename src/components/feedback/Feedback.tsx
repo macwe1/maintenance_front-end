@@ -9,15 +9,15 @@ export const Feedback: React.FunctionComponent = () => {
       <div className={styles.feedbackWrapper_content}>
         <div className={styles.feedbackWrapper_content_text}>
           <div className={styles.feedbackWrapper_content_text_header}>
-            <p>— FEEDBACK</p>
+            <p>— ОБРАТНАЯ СВЯЗЬ</p>
           </div>
           <div className={styles.feedbackWrapper_content_text_title}>
-            <p>Testimonials</p>
+            <p>Отзывы</p>
           </div>
           <div className={styles.feedbackWrapper_content_text_fulltitle}>
             <p>
-              Every day, dozens of people go to work or travel by cars rented
-              with FASTCAR.
+              Ежедневно десятки людей обращаются к нам, для того чтобы их
+              автомобиль не имел никаких проблем
             </p>
           </div>
         </div>
@@ -28,18 +28,15 @@ export const Feedback: React.FunctionComponent = () => {
             alt="step"
           />
           <div className={styles.feedbackWrapper_content_info_name}>
-            <p>Jane McCallan</p>
+            <p>Джейн МакКаллан</p>
           </div>
           <div className={styles.feedbackWrapper_content_info_proffesion}>
-            <p>Marketing Director at Pepsi Co.</p>
+            <p>Директор по маркетингу в Pepsi Co.</p>
           </div>
           <div className={styles.feedbackWrapper_content_info_feedback}>
             <p>
-              I am completely satisfied with the services of this company. I
-              often rent cars with FASTCAR for business meetings, driving to
-              work, etc. I am pleased with the excellent technical condition of
-              the cars, favorable rental conditions. And the staff is always
-              friendly.
+              Я полностью довольна услугами этой компании. Я часто ремонтирую
+              свой автомобиль с FASTCAR.
             </p>
           </div>
           <div className={styles.feedbackWrapper_content_info_sliderArrow1}>

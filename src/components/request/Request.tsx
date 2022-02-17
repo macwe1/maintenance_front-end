@@ -16,11 +16,9 @@ export const Request: React.FunctionComponent = () => {
       </div>
       <div className={styles.request_container}>
         <div className={styles.request_container_text}>
-          <p>—SEND A REQUEST</p>
-          <p>Need to Rent a Luxury Car?</p>
-          <p>
-            Complete the form below and we'll contact you as soon as possible!
-          </p>
+          <p>—ОТПРАВИТЬ ЗАПРОС</p>
+          <p>Нуждаетесь в ремонте автомобиля?</p>
+          <p>Заполните форму ниже, и мы свяжемся с вами как можно скорее!</p>
         </div>
         <div className={styles.request_container_form}>
           <div className={styles.request_container_form_input}>

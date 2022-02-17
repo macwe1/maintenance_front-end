@@ -34,8 +34,8 @@ const ListServices: React.FunctionComponent = () => {
     <div className={styles.listBrands}>
       <div className={styles.listBrands_text}>
         <p>— TOP MANUFACTURERS</p>
-        <p>Brands</p>
-        <p>Our fleet includes the best cars of the following brands.</p>
+        <p>Бренды</p>
+        <p>Мы занимаемся ремонтом следующих брендов</p>
       </div>
       <div className={styles.listBrands_backgroundAll}>
         <Slider {...banners}>
