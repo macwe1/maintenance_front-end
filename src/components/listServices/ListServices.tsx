@@ -16,7 +16,7 @@ export const ListServices: React.FunctionComponent = () => {
         </div>
         <div className={styles.wrapper_services_info}>
           <p className={styles.wrapper_services_info_textConst}>
-            МНОГИЕ УСЛУГИ ПО РЕМОНТУ АВТОМОБИЛЕЙ, КОТОРЫЕ МЫ ПРЕДЛАГАЕМ:
+            УСЛУГИ ПО РЕМОНТУ АВТОМОБИЛЕЙ, КОТОРЫЕ МЫ ПРЕДЛАГАЕМ:
           </p>
         </div>
         <div className={styles.wrapper_services_info}>
@@ -48,7 +48,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Ремонт КПП
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -57,7 +57,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Снятие и установка КПП
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -66,7 +66,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Ремонт тормозной системы
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -75,7 +75,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Ремонт подвески
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -84,7 +84,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Автоэлектрик
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -93,7 +93,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Компьютерная диагностика
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -102,7 +102,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Ремонт двигателя
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -111,7 +111,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Диагностика ходовой
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -120,7 +120,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Диагностика ДВС
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -129,7 +129,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Диагностика автомобиля
           </div>
           <div className={styles.wrapper_services_listServices_column_point}>
             <Icon
@@ -138,7 +138,7 @@ export const ListServices: React.FunctionComponent = () => {
               }
               name="lessThan"
             />
-            Ремонт и замена трансмиссии
+            Ремонт двигателя
           </div>
         </div>
         <div className={styles.wrapper_services_listServices_column}>
@@ -150,7 +150,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Регулярное ТО
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -159,7 +159,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Шиномонтаж
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -168,7 +168,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Замена сцепления
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -177,7 +177,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Развал схождение
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -186,7 +186,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Профессиональная диагностика двигателя
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -195,7 +195,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Промывка радиатора печи без снятия
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -204,7 +204,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Проточка тормозных дисков
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -213,7 +213,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Ремонт ремня ГРМ
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -222,7 +222,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Замена ШРУС
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -231,7 +231,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Проточка передних тормозных дисков
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -240,7 +240,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Ремонт охладителя
             </div>
             <div className={styles.wrapper_services_listServices_column_point}>
               <Icon
@@ -249,7 +249,7 @@ export const ListServices: React.FunctionComponent = () => {
                 }
                 name="lessThan"
               />
-              Ремонт и замена трансмиссии
+              Замена задних пневмобалонов
             </div>
           </div>
         </div>

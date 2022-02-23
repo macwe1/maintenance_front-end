@@ -21,7 +21,7 @@ export const Header: React.FunctionComponent = () => {
           <div className={styles.header_top_container_separator}></div>
           <div className={styles.header_top_container_workTime}>
             <Icon className={styles.icon} name="clockRegular" />
-            <p>Working Hours - 6 AM To 8 PM SUNDAY CLOSED</p>
+            <p>Часы работы: с 6:00 до 20:00, пн-сб</p>
           </div>
           <div className={styles.header_top_container_separator}></div>
           <div className={styles.header_top_container_menu}>
@@ -49,7 +49,7 @@ export const Header: React.FunctionComponent = () => {
             </Link>
           </div>
           <div className={styles.header_menuWrapper_container_link}>
-            <Link href="#" passHref>
+            <Link href="aboutUs" passHref>
               <a>О нас</a>
             </Link>
           </div>
