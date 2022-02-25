@@ -63,7 +63,16 @@ export const SideBar: React.FunctionComponent = () => {
           Агенты
         </div>
         <div className={styles.sidebar_items_separator}></div>
-        <div className={styles.sidebar_items_settings}>
+        <div
+          className={
+            router.asPath === '/admin/settings'
+              ? `${styles.sidebar_items_agents} &&
+                ${styles.activePage}
+              `
+              : styles.sidebar_items_settings
+          }
+          onClick={() => router.push('/admin/settings')}
+        >
           <Icon className={styles.icon} name="settings" />
           Настройки
         </div>

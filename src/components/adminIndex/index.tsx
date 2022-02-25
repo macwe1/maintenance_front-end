@@ -21,7 +21,7 @@ export const adminIndex: React.FunctionComponent = () => {
   }
   axios
     .post(
-      `http://127.0.0.1:3231/admin/stats`,
+      `http://api.vizet.macwel.live/admin/stats`,
       {},
       {
         headers,

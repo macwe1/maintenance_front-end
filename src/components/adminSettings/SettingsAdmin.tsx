@@ -1,10 +1,10 @@
-import styles from './contactsAdmin.module.scss'
-import Button from '@components/Button/Button'
+import styles from './settingsAdmin.module.scss'
 import { SideBar } from '@components/sidebar/Sidebar'
+import { feature } from '@components/feature/index'
 import { useEffect, useState } from 'react'
 import router from 'next/router'
 import axios from 'axios'
-export const Contacts: React.FunctionComponent = () => {
+export const Settings: React.FunctionComponent = () => {
   const [reqs, setReqs] = useState([])
   const [token, setToken] = useState(null)
   useEffect(() => {
@@ -21,7 +21,7 @@ export const Contacts: React.FunctionComponent = () => {
   useEffect(() => {
     axios
       .post(
-        `http://api.vizet.macwel.live/admin/getContacts`,
+        `http://api.vizet.macwel.live/admin/getAgents`,
         {},
         {
           headers,
@@ -73,37 +73,63 @@ export const Contacts: React.FunctionComponent = () => {
                 <p>Sort</p>
               </div>
             </div>
-            <ul className={styles.table}>
-              <li className={styles.table_header}>
-                <div className={`${styles.col} ${styles.col1}`}>Детали</div>
-                <div className={`${styles.col} ${styles.col3}`}>Дата</div>
-                <div className={`${styles.col} ${styles.col4}`}>Телефон</div>
-                <div
-                  className={`${styles.col} ${styles.col5} ${styles.col6}`}
-                ></div>
-              </li>
-              {reqs.length !== 0 ? (
-                reqs.map((el) => (
-                  <li className={styles.table_row}>
-                    <div className={`${styles.col} ${styles.col1}`}>
-                      {el.fullName}
+            <div className={styles.wrapper_container_tableTop_block_table_top}>
+              <div
+                className={
+                  styles.wrapper_container_tableTop_block_table_top_first
+                }
+              >
+                Детали
+              </div>
+              <div
+                className={
+                  styles.wrapper_container_tableTop_block_table_top_second
+                }
+              >
+                ФИО
+              </div>
+            </div>
+            {reqs.length !== 0 ? (
+              reqs.map((el) => (
+                <div className={styles.wrapper_container_tableTop_block_ticket}>
+                  <div
+                    className={
+                      styles.wrapper_container_tableTop_block_ticket_one
+                    }
+                  >
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_ticket_one_name
+                      }
+                    >
+                      <p>{el.email}</p>
                     </div>
-
-                    <div className={`${styles.col} ${styles.col3}`}>
-                      {el.createdAt}
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_ticket_one_desc
+                      }
+                    >
+                      <p>{el.fullName}</p>
                     </div>
-                    <div className={`${styles.col} ${styles.col4}`}>
-                      {el.phone}
+                  </div>
+                  <div
+                    className={
+                      styles.wrapper_container_tableTop_block_ticket_two
+                    }
+                  >
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_ticket_two_name
+                      }
+                    >
+                      <p>{el.fullName}</p>
                     </div>
-                    <div className={`${styles.col} ${styles.col5}`}>
-                      <Button text="Удалить"></Button>
-                    </div>
-                  </li>
-                ))
-              ) : (
-                <div>Контактов нету</div>
-              )}
-            </ul>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div>Контактов нету</div>
+            )}
           </div>
         </div>
       </div>

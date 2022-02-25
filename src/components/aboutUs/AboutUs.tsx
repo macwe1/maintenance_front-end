@@ -109,6 +109,9 @@ export const AboutUs: React.FunctionComponent = () => {
             </div>
           </div>
         </div>
+        <div className={styles.wrapper_container_cart}>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22237.15197527065!2d-0.1677081945286924!3d51.63454100172128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761834b32f8073%3A0xfe4f27282907fa53!2sCorabar%20Entertainment!5e0!3m2!1sru!2sru!4v1645800395543!5m2!1sru!2sru"></iframe>
+        </div>
       </div>
     </div>
   )

@@ -1,5 +1,7 @@
 import styles from './requestAdmin.module.scss'
 import { SideBar } from '@components/sidebar/Sidebar'
+import Button from '@components/Button/Button'
+
 import { useEffect, useState } from 'react'
 import router from 'next/router'
 import axios from 'axios'
@@ -20,7 +22,7 @@ export const Request: React.FunctionComponent = () => {
   useEffect(() => {
     axios
       .post(
-        `http://127.0.0.1:3231/admin/getAgents`,
+        `http://api.vizet.macwel.live/admin/getAgents`,
         {},
         {
           headers,
@@ -73,8 +75,46 @@ export const Request: React.FunctionComponent = () => {
                 <p>Sort</p>
               </div>
             </div>
+            <ul className={styles.table}>
+              <li className={styles.table_header}>
+                <div className={`${styles.col} ${styles.col1}`}>Детали</div>
+                <div className={`${styles.col} ${styles.col3}`}>Дата</div>
+                <div className={`${styles.col} ${styles.col4}`}>Телефон</div>
+                <div
+                  className={`${styles.col} ${styles.col5} ${styles.col6}`}
+                ></div>
+              </li>
+              {reqs.length !== 0 ? (
+                reqs.map((el) => (
+                  <li className={styles.table_row}>
+                    <div className={`${styles.col} ${styles.col1}`}>
+                      {el.fullName}
+                    </div>
 
-            <div className={styles.wrapper_container_tableTop_block_table_top}>
+                    <div className={`${styles.col} ${styles.col3}`}>
+                      {el.createdAt}
+                    </div>
+                    <div className={`${styles.col} ${styles.col4}`}>
+                      {el.phone}
+                    </div>
+                    <div className={`${styles.col} ${styles.col5}`}>
+                      <Button text="Удалить"></Button>
+                    </div>
+                  </li>
+                ))
+              ) : (
+                <div>Контактов нету</div>
+              )}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+{
+  /* <div className={styles.wrapper_container_tableTop_block_table_top}>
               <div
                 className={
                   styles.wrapper_container_tableTop_block_table_top_first
@@ -176,4 +216,5 @@ export const Request: React.FunctionComponent = () => {
       </div>
     </div>
   )
+} */
 }

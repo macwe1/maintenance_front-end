@@ -64,8 +64,9 @@
 }
 
 .activeBlock {
-    border: 3px solid rgb(9, 144, 255);
+    border: 3px solid colors.$primary-color;
      :nth-child(2) {
-        color: rgb(9, 144, 255);
+        color: colors.$primary-color;
+        ;
     }
 }

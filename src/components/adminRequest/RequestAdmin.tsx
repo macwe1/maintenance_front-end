@@ -1,5 +1,6 @@
 import styles from './requestAdmin.module.scss'
 import { SideBar } from '@components/sidebar/Sidebar'
+import Button from '@components/Button/Button'
 import { useEffect, useState } from 'react'
 import router from 'next/router'
 import axios from 'axios'
@@ -20,7 +21,7 @@ export const Request: React.FunctionComponent = () => {
   useEffect(() => {
     axios
       .post(
-        `http://127.0.0.1:3231/admin/requests`,
+        `http://api.vizet.macwel.live/admin/requests`,
         {},
         {
           headers,
@@ -73,8 +74,38 @@ export const Request: React.FunctionComponent = () => {
                 <p>Sort</p>
               </div>
             </div>
+            <ul className={styles.table}>
+              <li className={styles.table_header}>
+                <div className={`${styles.col} ${styles.col1}`}>Детали</div>
+                <div className={`${styles.col} ${styles.col2}`}>ФИО</div>
+                <div className={`${styles.col} ${styles.col3}`}>Дата</div>
+                <div className={`${styles.col} ${styles.col4}`}>Телефон</div>
+                <div
+                  className={`${styles.col} ${styles.col5} ${styles.col6}`}
+                ></div>
+              </li>
+              {reqs.map((el) => (
+                <li className={styles.table_row}>
+                  <div className={`${styles.col} ${styles.col1}`}>
+                    {el.desc}
+                  </div>
+                  <div className={`${styles.col} ${styles.col2}`}>
+                    {el.fullName}
+                  </div>
+                  <div className={`${styles.col} ${styles.col3}`}>
+                    {el.createdAt}
+                  </div>
+                  <div className={`${styles.col} ${styles.col4}`}>
+                    {el.phone}
+                  </div>
+                  <div className={`${styles.col} ${styles.col5}`}>
+                    <Button text="Удалить"></Button>
+                  </div>
+                </li>
+              ))}
+            </ul>
 
-            <div className={styles.wrapper_container_tableTop_block_table_top}>
+            {/* <div className={styles.wrapper_container_tableTop_block_table_top}>
               <div
                 className={
                   styles.wrapper_container_tableTop_block_table_top_first
@@ -98,74 +129,95 @@ export const Request: React.FunctionComponent = () => {
               </div>
               <div
                 className={
-                  styles.wrapper_container_tableTop_block_table_top_three
+                  styles.wrapper_container_tableTop_block_table_top_fourth
                 }
               >
                 Номер телефона
               </div>
-            </div>
-            {reqs.map((el) => (
-              <div className={styles.wrapper_container_tableTop_block_ticket}>
+            </div> */}
+            {/* <div className={styles.wrapper_container_tableTop_block_all}>
+              {reqs.map((el) => (
                 <div
-                  className={styles.wrapper_container_tableTop_block_ticket_one}
+                  className={styles.wrapper_container_tableTop_block_all_ticket}
                 >
                   <div
                     className={
-                      styles.wrapper_container_tableTop_block_ticket_one_name
+                      styles.wrapper_container_tableTop_block_all_ticket_one
                     }
                   >
-                    <p>{el.desc}</p>
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_all_ticket_one_name
+                      }
+                    >
+                      <p>{el.desc}</p>
+                    </div>
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_all_ticket_one_desc
+                      }
+                    >
+                      <p>{el.createdAt}</p>
+                    </div>
                   </div>
                   <div
                     className={
-                      styles.wrapper_container_tableTop_block_ticket_one_desc
+                      styles.wrapper_container_tableTop_block_all_ticket_two
                     }
                   >
-                    <p>{el.createdAt}</p>
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_all_ticket_two_name
+                      }
+                    >
+                      <p>{el.fullName}</p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className={styles.wrapper_container_tableTop_block_ticket_two}
-                >
                   <div
                     className={
-                      styles.wrapper_container_tableTop_block_ticket_two_name
+                      styles.wrapper_container_tableTop_block_all_ticket_three
                     }
                   >
-                    <p>{el.fullName}</p>
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_all_ticket_three_name
+                      }
+                    >
+                      <p>{el.createdAt}</p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three
-                  }
-                >
                   <div
                     className={
-                      styles.wrapper_container_tableTop_block_ticket_three_name
+                      styles.wrapper_container_tableTop_block_all_ticket_fourth
                     }
                   >
-                    <p>{el.createdAt}</p>
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_all_ticket_fourth_phone
+                      }
+                    >
+                      <p>{el.phone}</p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  className={
-                    styles.wrapper_container_tableTop_block_ticket_three
-                  }
-                >
                   <div
                     className={
-                      styles.wrapper_container_tableTop_block_ticket_three_name
+                      styles.wrapper_container_tableTop_block_all_ticket_delete
                     }
                   >
-                    <p>{el.phone}</p>
+                    <div
+                      className={
+                        styles.wrapper_container_tableTop_block_all_ticket_delete_but
+                      }
+                    >
+                      <Button text="Удалить"></Button>
+                    </div>
                   </div>
-                </div>
-              </div>
-            ))}
+                </div> */}
+            {/* ))} */}
           </div>
         </div>
       </div>
     </div>
+    // </div>
   )
 }
