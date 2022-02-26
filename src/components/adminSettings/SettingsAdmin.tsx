@@ -1,6 +1,11 @@
 import styles from './settingsAdmin.module.scss'
 import { SideBar } from '@components/sidebar/Sidebar'
-import { feature } from '@components/feature/index'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faX } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+
+import Button from '@components/Button/Button'
 import { useEffect, useState } from 'react'
 import router from 'next/router'
 import axios from 'axios'
@@ -21,7 +26,7 @@ export const Settings: React.FunctionComponent = () => {
   useEffect(() => {
     axios
       .post(
-        `http://api.vizet.macwel.live/admin/getAgents`,
+        `http://api.vizet.macwel.live/admin/getSettings`,
         {},
         {
           headers,
@@ -73,63 +78,57 @@ export const Settings: React.FunctionComponent = () => {
                 <p>Sort</p>
               </div>
             </div>
-            <div className={styles.wrapper_container_tableTop_block_table_top}>
-              <div
-                className={
-                  styles.wrapper_container_tableTop_block_table_top_first
-                }
-              >
-                Детали
-              </div>
-              <div
-                className={
-                  styles.wrapper_container_tableTop_block_table_top_second
-                }
-              >
-                ФИО
+            <div className={styles.table}>
+              <div className={styles.table_content}>
+                <div className={styles.table_content_blockVisible}>
+                  <div className={styles.table_content_blockVisible_info}>
+                    <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
+                    <p>Иванов Дмитрий Ильич</p>
+                  </div>
+                  <div
+                    className={`${styles.table_content_blockVisible_info} ${styles.table_content_blockVisible_active}`}
+                  >
+                    <p
+                      className={styles.table_content_blockVisible_active_text}
+                    >
+                      lorem ipsum dolor sit amet, consectlorem ipsum dolor sit
+                      amet, consectlorem ipsum dolor sit amet, consectlorem
+                      ipsum dolor sit amet, consectlorem ipsum dolor sit amet,
+                      consectlorem ipsum dolor sit amet, consectlorem ipsum
+                      dolor sit amet, consectlorem ipsum dolor sit amet,
+                      consectlorem ipsum dolor sit amet, consect
+                    </p>
+                    <div
+                      className={styles.table_content_blockVisible_active_func}
+                    >
+                      <div
+                        className={
+                          styles.table_content_blockVisible_active_func_roll
+                        }
+                      >
+                        <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
+                        <p>Мастер</p>
+                      </div>
+                      <div
+                        className={
+                          styles.table_content_blockVisible_active_func_delete
+                        }
+                      >
+                        <FontAwesomeIcon icon={faX}></FontAwesomeIcon>
+                        <p>Удалить</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <Button
+                    click={() => {
+                      console.log(1)
+                    }}
+                    type={1}
+                    text="Полная информация"
+                  ></Button> */}
+                </div>
               </div>
             </div>
-            {reqs.length !== 0 ? (
-              reqs.map((el) => (
-                <div className={styles.wrapper_container_tableTop_block_ticket}>
-                  <div
-                    className={
-                      styles.wrapper_container_tableTop_block_ticket_one
-                    }
-                  >
-                    <div
-                      className={
-                        styles.wrapper_container_tableTop_block_ticket_one_name
-                      }
-                    >
-                      <p>{el.email}</p>
-                    </div>
-                    <div
-                      className={
-                        styles.wrapper_container_tableTop_block_ticket_one_desc
-                      }
-                    >
-                      <p>{el.fullName}</p>
-                    </div>
-                  </div>
-                  <div
-                    className={
-                      styles.wrapper_container_tableTop_block_ticket_two
-                    }
-                  >
-                    <div
-                      className={
-                        styles.wrapper_container_tableTop_block_ticket_two_name
-                      }
-                    >
-                      <p>{el.fullName}</p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <div>Контактов нету</div>
-            )}
           </div>
         </div>
       </div>

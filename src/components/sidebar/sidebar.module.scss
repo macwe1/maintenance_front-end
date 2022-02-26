@@ -1,8 +1,9 @@
 @use 'colors';
 @use 'fonts';
 .sidebar {
-    @media (max-width: 1600px) {
-        height: auto;
+    transition: all .3s ease;
+    @media (max-width: 767px) {
+        width: 46px;
     }
     display: flex;
     justify-content: flex-start;
@@ -54,6 +55,9 @@
             width: 100%;
             padding: 0.1px 0;
             opacity: 40%;
+            @media (max-width: 767px) {
+                width: 46px;
+            }
         }
         &_settings {
             color: #A4A6B3;

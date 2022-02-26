@@ -36,6 +36,10 @@
         &_content {
             padding-top: 54px;
             &_description {
+                @media (max-width: 767px) {
+                    display: flex;
+                    flex-direction: column;
+                }
                 display: flex;
                 justify-content: flex-start;
                 &_block {
