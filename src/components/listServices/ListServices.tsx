@@ -4,7 +4,7 @@ import { Icon } from '@components/icon/Icon'
 
 export const ListServices: React.FunctionComponent = () => {
   return (
-    <div className={styles.wrapper_services}>
+    <div id="ListServices" className={styles.wrapper_services}>
       <div className={styles.wrapper_services_text}>
         <div className={styles.wrapper_services_info}>
           <p className={styles.wrapper_services_info_header}>НАШИ УСЛУГИ</p>

@@ -5,7 +5,7 @@ import { Icon } from '@components/icon/Icon'
 
 export const Feedback: React.FunctionComponent = () => {
   return (
-    <div className={styles.feedbackWrapper}>
+    <div id="Feedback" className={styles.feedbackWrapper}>
       <div className={styles.feedbackWrapper_content}>
         <div className={styles.feedbackWrapper_content_text}>
           <div className={styles.feedbackWrapper_content_text_header}>

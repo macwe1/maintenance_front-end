@@ -101,14 +101,14 @@ export const Settings: React.FunctionComponent = () => {
                     <div
                       className={styles.table_content_blockVisible_active_func}
                     >
-                      <div
+                      {/* <div
                         className={
                           styles.table_content_blockVisible_active_func_roll
                         }
                       >
                         <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
                         <p>Мастер</p>
-                      </div>
+                      </div> */}
                       <div
                         className={
                           styles.table_content_blockVisible_active_func_delete

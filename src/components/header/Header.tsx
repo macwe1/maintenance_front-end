@@ -34,17 +34,17 @@ export const Header: React.FunctionComponent = () => {
       <div className={styles.header_menuWrapper}>
         <div className={styles.header_menuWrapper_container}>
           <div className={styles.header_menuWrapper_container_link}>
-            <Link href="#" passHref>
+            <Link href="/" passHref>
               <a>Главная</a>
             </Link>
           </div>
           <div className={styles.header_menuWrapper_container_link}>
-            <Link href="#" passHref>
+            <Link href="#ListServices" passHref>
               <a>Услуги</a>
             </Link>
           </div>
           <div className={styles.header_menuWrapper_container_link}>
-            <Link href="#" passHref>
+            <Link href="#Feedback" passHref>
               <a>Отзывы</a>
             </Link>
           </div>
