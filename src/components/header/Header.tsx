@@ -53,11 +53,6 @@ export const Header: React.FunctionComponent = () => {
               <a>О нас</a>
             </Link>
           </div>
-          <div className={styles.header_menuWrapper_container_link}>
-            <Link href="#" passHref>
-              <a>Контакты</a>
-            </Link>
-          </div>
         </div>
       </div>
     </div>

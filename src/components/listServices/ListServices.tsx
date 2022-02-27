@@ -1,7 +1,6 @@
 import styles from './listServices.module.scss'
 import Button from '@components/Button/Button'
 import { Icon } from '@components/icon/Icon'
-
 export const ListServices: React.FunctionComponent = () => {
   return (
     <div id="ListServices" className={styles.wrapper_services}>
