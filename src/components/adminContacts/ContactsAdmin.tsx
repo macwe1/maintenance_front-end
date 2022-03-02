@@ -84,7 +84,7 @@ export const Contacts: React.FunctionComponent = () => {
               </li>
               {reqs.length !== 0 ? (
                 reqs.map((el) => (
-                  <li className={styles.table_row}>
+                  <li className={styles.table_row}> {el.}
                     <div className={`${styles.col} ${styles.col1}`}>
                       {el.fullName}
                     </div>

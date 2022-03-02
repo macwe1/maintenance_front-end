@@ -33,7 +33,7 @@ const ListServices: React.FunctionComponent = () => {
   return (
     <div className={styles.listBrands}>
       <div className={styles.listBrands_text}>
-        <p>— TOP MANUFACTURERS</p>
+        <p>— Список брендов</p>
         <p>Бренды</p>
         <p>Мы занимаемся ремонтом следующих брендов</p>
       </div>

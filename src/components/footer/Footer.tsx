@@ -17,7 +17,7 @@ export const Footer: React.FunctionComponent = () => {
       </div>
       <div className={styles.footerWrapper_separator}></div>
       <div className={styles.footerWrapper_content_terms}>
-        <p>© Created by Macwel Group</p>
+        <p></p>
         <div className={styles.footerWrapper_content_terms_created}>
           <p>
             Copyright © 2022 Carobar.

@@ -3,6 +3,9 @@
 @use 'fonts';
 .header {
     &_logo {
+        @media (max-width: 1500px) {
+            display: none;
+        }
         background-color: #151515;
         position: absolute;
         width: 376px;
@@ -15,6 +18,11 @@
     &_top {
         background-color: #151515;
         &_container {
+            @media (max-width: 1500px) {
+                justify-content: center;
+                padding-right: 0;
+            }
+            padding-right: 100px;
             height: 60px;
             display: flex;
             justify-content: flex-end;
@@ -60,6 +68,11 @@
     &_menuWrapper {
         background-color: #F15B5B;
         &_container {
+            @media (max-width: 1500px) {
+                justify-content: center;
+                padding-right: 0;
+            }
+            padding-right: 100px;
             display: flex;
             justify-content: flex-end;
             align-items: center;
