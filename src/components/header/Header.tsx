@@ -13,10 +13,18 @@ export const Header: React.FunctionComponent = () => {
       <div className={styles.header_top}>
         <div className={styles.header_top_container}>
           <div className={styles.header_top_container_socLink}>
-            <Icon className={styles.icon} name="vk" />
-            <Icon className={styles.icon} name="youtube" />
-            <Icon className={styles.icon} name="whatsapp" />
-            <Icon className={styles.icon} name="telegram" />
+            <a href="http://vk.com/">
+              <Icon className={styles.icon} name="vk" />
+            </a>
+            <a href="http://youtube.com/">
+              <Icon className={styles.icon} name="youtube" />
+            </a>
+            <a href="http://whatsapp.com/">
+              <Icon className={styles.icon} name="whatsapp" />
+            </a>
+            <a href="http://telegram.com/">
+              <Icon className={styles.icon} name="telegram" />
+            </a>
           </div>
           <div className={styles.header_top_container_separator}></div>
           <div className={styles.header_top_container_workTime}>
@@ -25,9 +33,15 @@ export const Header: React.FunctionComponent = () => {
           </div>
           <div className={styles.header_top_container_separator}></div>
           <div className={styles.header_top_container_menu}>
-            <Icon className={styles.icon} name="telegram" />
-            <Icon className={styles.icon} name="telegram" />
-            <Icon className={styles.icon} name="telegram" />
+            <a href="http://instagram.com/">
+              <Icon className={styles.icon} name="instagramBrands" />
+            </a>
+            <a href="tel:89123037544">
+              <Icon className={styles.icon} name="phoneAlt" />
+            </a>
+            <a href="http://telegram.com/">
+              <Icon className={styles.icon} name="telegram" />
+            </a>
           </div>
         </div>
       </div>

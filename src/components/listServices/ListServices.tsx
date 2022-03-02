@@ -27,7 +27,9 @@ export const ListServices: React.FunctionComponent = () => {
             РЕШЕНИИ ЭТИХ ЗАДАЧ.
           </p>
         </div>
-        <Button text="Оставить заявку" />
+        <a href="#request">
+          <Button text="Оставить заявку" />
+        </a>
       </div>
       <div className={styles.wrapper_services_listServices}>
         <div className={styles.wrapper_services_listServices_column}>

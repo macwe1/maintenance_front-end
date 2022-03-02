@@ -4,7 +4,7 @@ import back from '@common/img/back2.jpg'
 import Button from '@components/Button/Button'
 export const Request: React.FunctionComponent = () => {
   return (
-    <div className={styles.request}>
+    <div id="request" className={styles.request}>
       <div className={styles.test}>
         <Image
           src={back}

@@ -2,6 +2,7 @@
 @use 'variables';
 @use 'fonts';
 .header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.801);
     &_logo {
         @media (max-width: 1500px) {
             display: none;
@@ -31,6 +32,9 @@
             margin-left: auto;
             // width: 1170px;
             &_socLink {
+                a {
+                    padding-right: 10px;
+                }
                 display: flex;
                 span {
                     margin-right: 6px;
@@ -56,6 +60,9 @@
             }
             &_menu {
                 display: flex;
+                a {
+                    padding-right: 20px;
+                }
                 span {
                     margin-right: 28px;
                 }

@@ -22,11 +22,11 @@ export const Footer: React.FunctionComponent = () => {
           <p>
             Copyright © 2022 Carobar.
             <span>
-              <Link href="#"> All rights reserved.</Link>
+              <Link href="/rigth"> All rights reserved.</Link>
             </span>{' '}
             and
             <span>
-              <Link href="#"> cookies</Link>
+              <Link href="/cookies"> cookies</Link>
             </span>
             .
           </p>
